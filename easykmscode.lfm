@@ -1,0 +1,75 @@
+object Form1: TForm1
+  Left = 248
+  Height = 211
+  Top = 210
+  Width = 451
+  Caption = 'Easy kms'
+  ClientHeight = 211
+  ClientWidth = 451
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.8.4.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 13
+    Top = 16
+    Width = 32
+    Caption = 'Server'
+    ParentColor = False
+  end
+  object ComboBox1: TComboBox
+    Left = 64
+    Height = 21
+    Top = 16
+    Width = 376
+    ItemHeight = 13
+    OnChange = ComboBox1Change
+    TabOrder = 0
+    Text = 'ComboBox1'
+  end
+  object Button1: TButton
+    Left = 192
+    Height = 25
+    Top = 56
+    Width = 75
+    Caption = 'Activate'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 128
+    Height = 25
+    Top = 88
+    Width = 203
+    Caption = 'Show activation status'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 128
+    Height = 25
+    Top = 120
+    Width = 203
+    Caption = 'Reset activation'
+    OnClick = Button3Click
+    TabOrder = 3
+  end
+  object Button4: TButton
+    Left = 128
+    Height = 25
+    Top = 152
+    Width = 203
+    Caption = 'Change product key'
+    OnClick = Button4Click
+    TabOrder = 4
+  end
+  object Button5: TButton
+    Left = 130
+    Height = 25
+    Top = 181
+    Width = 201
+    Caption = 'Reset server setting'
+    OnClick = Button5Click
+    TabOrder = 5
+  end
+end
