@@ -41,7 +41,7 @@ implementation
 procedure window_setup();
 begin
  Application.Title:='Easy kms';
- Form1.Caption:='Easy kms 1.2.1';
+ Form1.Caption:='Easy kms 1.3';
  Form1.BorderStyle:=bsDialog;
  Form1.Font.Name:=Screen.MenuFont.Name;
  Form1.Font.Size:=14;
@@ -113,26 +113,17 @@ execute_command('slmgr /skms '+server);
 execute_command('slmgr /ato');
 end;
 
-procedure show_activation_status();
-begin
-execute_command('slmgr /dli');
-end;
-
-procedure reset_activation();
-begin
-execute_command('slmgr /rearm');
-end;
-
-procedure reset_server();
-begin
-execute_command('slmgr /ckms');
-end;
-
 procedure change_product_key();
 var key:string;
 begin
 key:=InputBox(Application.Title,'Enter new product key','');
 if key<>'' then execute_command('slmgr /ipk '+key);
+end;
+
+procedure do_other_action(action:Byte);
+var command:array[0..2] of string=('slmgr /dli','slmgr /rearm','slmgr /ckms');
+begin
+if action<3 then execute_command(command[action]);
 end;
 
 {$R *.lfm}
@@ -156,12 +147,12 @@ end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
-show_activation_status();
+do_other_action(0);
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
-reset_activation();
+do_other_action(1);
 end;
 
 procedure TForm1.Button4Click(Sender: TObject);
@@ -171,7 +162,7 @@ end;
 
 procedure TForm1.Button5Click(Sender: TObject);
 begin
-reset_server();
+do_other_action(2);
 end;
 
 procedure TForm1.ComboBox1Change(Sender: TObject);
