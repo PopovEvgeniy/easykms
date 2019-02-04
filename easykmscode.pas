@@ -41,7 +41,7 @@ implementation
 procedure window_setup();
 begin
  Application.Title:='Easy kms';
- Form1.Caption:='Easy kms 1.3';
+ Form1.Caption:='Easy kms 1.4';
  Form1.BorderStyle:=bsDialog;
  Form1.Font.Name:=Screen.MenuFont.Name;
  Form1.Font.Size:=14;
@@ -75,9 +75,18 @@ end;
 
 procedure load_server_list(servers:string);
 begin
+if FileExists(servers)=True then
+begin
 Form1.ComboBox1.Items.Clear();
 Form1.ComboBox1.Items.LoadFromFile(servers);
 Form1.ComboBox1.ItemIndex:=0;
+end
+else
+begin
+ShowMessage('Cant load server list');
+Application.Terminate();
+end;
+
 end;
 
 procedure setup();

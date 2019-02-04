@@ -1,6 +1,6 @@
                                             Easy kms
 
-                                           Version 1.3
+                                           Version 1.4
 
                    Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
@@ -19,9 +19,13 @@ Program usage
 Just run this tool and select server for activate you copy of Microsoft Windows.
 This software need admin right for correct work. Run it as admin.
 
-Trouble guide
+Product key
 
 Volume license is the best choice because it doesn't have problem with activation. Use volume license if possible.
+You need apply product key from volume license before do activation if you have ordinary license.
+
+Trouble guide
+
 Try to change server or/and product key if you have trouble with activation.
 
 Server list
@@ -55,4 +59,4 @@ Version history
 1.2 - User interface was improved
 1.2.1 - Small changes
 1.2.1.1 - Server list was updated
-1.3 - Small changes
+1.3 - 1.4 - Small changes
