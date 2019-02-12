@@ -8,7 +8,7 @@ object Form1: TForm1
   ClientWidth = 451
   OnCreate = FormCreate
   OnShow = FormShow
-  LCLVersion = '1.8.4.0'
+  LCLVersion = '2.0.0.4'
   object Label1: TLabel
     Left = 8
     Height = 13

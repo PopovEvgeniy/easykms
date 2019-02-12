@@ -6,7 +6,7 @@ unit Easykmscode;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls, LazUTF8;
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
 
 type
 
@@ -41,7 +41,7 @@ implementation
 procedure window_setup();
 begin
  Application.Title:='Easy kms';
- Form1.Caption:='Easy kms 1.4';
+ Form1.Caption:='Easy kms 1.5';
  Form1.BorderStyle:=bsDialog;
  Form1.Font.Name:=Screen.MenuFont.Name;
  Form1.Font.Size:=14;
@@ -101,7 +101,7 @@ function execute_program(executable:string;argument:string):Integer;
 var code:Integer;
 begin
 try
-code:=ExecuteProcess(UTF8ToWinCP(executable),UTF8ToWinCP(argument),[]);
+code:=ExecuteProcess(executable,argument,[]);
 except
 On EOSError do code:=-1;
 end;

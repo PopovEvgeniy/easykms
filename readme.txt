@@ -1,6 +1,6 @@
                                             Easy kms
 
-                                           Version 1.4
+                                           Version 1.5
 
                    Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
@@ -59,4 +59,4 @@ Version history
 1.2 - User interface was improved
 1.2.1 - Small changes
 1.2.1.1 - Server list was updated
-1.3 - 1.4 - Small changes
+1.3 - 1.5 - Small changes
