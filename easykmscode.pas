@@ -41,7 +41,7 @@ implementation
 procedure window_setup();
 begin
  Application.Title:='Easy kms';
- Form1.Caption:='Easy kms 1.5';
+ Form1.Caption:='Easy kms 1.6';
  Form1.BorderStyle:=bsDialog;
  Form1.Font.Name:=Screen.MenuFont.Name;
  Form1.Font.Size:=14;
@@ -50,7 +50,7 @@ end;
 procedure interface_setup();
 begin
 Form1.ComboBox1.Text:='';
-Form1.ComboBox1.ReadOnly:=False;
+Form1.ComboBox1.Style:=csDropDown;
 Form1.Button1.ShowHint:=True;
 Form1.Button2.ShowHint:=True;
 Form1.Button3.ShowHint:=True;
