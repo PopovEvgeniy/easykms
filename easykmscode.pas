@@ -41,7 +41,7 @@ implementation
 procedure window_setup();
 begin
  Application.Title:='Easy kms';
- Form1.Caption:='Easy kms 1.6';
+ Form1.Caption:='Easy kms 1.7';
  Form1.BorderStyle:=bsDialog;
  Form1.Font.Name:=Screen.MenuFont.Name;
  Form1.Font.Size:=14;
@@ -97,23 +97,12 @@ language_setup();
 load_server_list('servers.txt');
 end;
 
-function execute_program(executable:string;argument:string):Integer;
-var code:Integer;
-begin
-try
-code:=ExecuteProcess(executable,argument,[]);
-except
-On EOSError do code:=-1;
-end;
-execute_program:=code;
-end;
-
 procedure execute_command(command:string);
 var shell,arguments:string;
 begin
 shell:=GetEnvironmentVariable('COMSPEC');
 arguments:='/c '+command;
-execute_program(shell,arguments);
+if shell<>'' then ExecuteProcess(shell,arguments,[]);
 end;
 
 procedure do_activation(server:string);
