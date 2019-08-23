@@ -1,6 +1,6 @@
                                             Easy kms
 
-                                           Version 1.8
+                                           Version 1.8.0.2
 
                    Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
@@ -23,6 +23,7 @@ Product key
 
 Volume license is the best choice because it doesn't have problem with activation. Use volume license if possible.
 You need apply product key from volume license before do activation if you have ordinary license.
+You can see list of these keys here: https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj612867(v%3Dws.11)
 
 Trouble guide
 
@@ -63,3 +64,5 @@ Version history
 1.6 - Source code was adapted to new version of Lazarus
 1.7 - Small changes
 1.8 - User interface was improved
+1.8.0.1 - Server list was updated
+1.8.0.2 - Documentation was updated
