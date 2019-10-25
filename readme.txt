@@ -1,6 +1,6 @@
                                             Easy kms
 
-                                           Version 1.8.5
+                                           Version 1.8.7
 
                    Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
@@ -68,4 +68,4 @@ Version history
 1.8.0.2 - Documentation was updated
 1.8.1 - Small changes
 1.8.2 - 1.8.3 - User interface was improved
-1.8.4 - 1.8.5 - Small changes
+1.8.4 - 1.8.7 - Small changes
