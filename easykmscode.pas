@@ -34,11 +34,11 @@ implementation
 
 procedure window_setup();
 begin
- Application.Title:='Easy kms';
- Form1.Caption:='Easy kms 1.8.8';
- Form1.BorderStyle:=bsDialog;
- Form1.Font.Name:=Screen.MenuFont.Name;
- Form1.Font.Size:=14;
+Application.Title:='Easy kms';
+Form1.Caption:='Easy kms 1.8.9';
+Form1.BorderStyle:=bsDialog;
+Form1.Font.Name:=Screen.MenuFont.Name;
+Form1.Font.Size:=14;
 end;
 
 procedure interface_setup();
@@ -92,16 +92,7 @@ var shell,arguments:string;
 begin
 shell:=GetEnvironmentVariable('COMSPEC');
 arguments:='/c '+command;
-if shell<>'' then
-begin
-ExecuteProcess(shell,arguments,[]);
-end
-else
-begin
-ShowMessage('Cant run command-line shell');
-Halt(0);
-end;
-
+if shell<>'' then ExecuteProcess(shell,arguments,[]);
 end;
 
 procedure do_activation(server:string);
