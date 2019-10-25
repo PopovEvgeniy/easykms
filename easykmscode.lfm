@@ -1,10 +1,10 @@
 object Form1: TForm1
   Left = 248
-  Height = 183
+  Height = 156
   Top = 210
   Width = 451
   Caption = 'Easy kms'
-  ClientHeight = 183
+  ClientHeight = 156
   ClientWidth = 451
   OnCreate = FormCreate
   LCLVersion = '2.0.4.0'
@@ -48,17 +48,8 @@ object Form1: TForm1
     Height = 25
     Top = 120
     Width = 203
-    Caption = 'Reset activation'
+    Caption = 'Change product key'
     OnClick = Button3Click
     TabOrder = 3
-  end
-  object Button4: TButton
-    Left = 128
-    Height = 25
-    Top = 152
-    Width = 203
-    Caption = 'Change product key'
-    OnClick = Button4Click
-    TabOrder = 4
   end
 end

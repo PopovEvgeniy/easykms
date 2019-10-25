@@ -16,13 +16,11 @@ type
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
-    Button4: TButton;
     ComboBox1: TComboBox;
     Label1: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
 
@@ -37,7 +35,7 @@ implementation
 procedure window_setup();
 begin
  Application.Title:='Easy kms';
- Form1.Caption:='Easy kms 1.8.7';
+ Form1.Caption:='Easy kms 1.8.8';
  Form1.BorderStyle:=bsDialog;
  Form1.Font.Name:=Screen.MenuFont.Name;
  Form1.Font.Size:=14;
@@ -50,7 +48,6 @@ Form1.ComboBox1.Style:=csDropDownList;
 Form1.Button1.ShowHint:=False;
 Form1.Button2.ShowHint:=Form1.Button1.ShowHint;
 Form1.Button3.ShowHint:=Form1.Button1.ShowHint;
-Form1.Button4.ShowHint:=Form1.Button1.ShowHint;
 end;
 
 procedure language_setup();
@@ -58,8 +55,7 @@ begin
 Form1.Label1.Caption:='Server';
 Form1.Button1.Caption:='Activate';
 Form1.Button2.Caption:='Show activation status';
-Form1.Button3.Caption:='Reset activation';
-Form1.Button4.Caption:='Change product key';
+Form1.Button3.Caption:='Change product key';
 end;
 
 procedure load_list(servers:string);
@@ -121,11 +117,6 @@ key:=InputBox(title,'Enter new product key','');
 if key<>'' then execute_command('slmgr /ipk '+key);
 end;
 
-procedure reset_activation();
-begin
-execute_command('slmgr /rearm');
-end;
-
 procedure show_activation_status();
 begin
 execute_command('slmgr /dli');
@@ -151,11 +142,6 @@ show_activation_status();
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
-begin
-reset_activation();
-end;
-
-procedure TForm1.Button4Click(Sender: TObject);
 begin
 change_product_key(Application.Title);
 end;
