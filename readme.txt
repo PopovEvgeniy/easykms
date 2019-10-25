@@ -70,4 +70,4 @@ Version history
 1.8.2 - 1.8.3 - User interface was improved
 1.8.4 - 1.8.7 - Small changes
 1.8.8 - User interface was improved
-1.8.7 - Small changes
+1.8.9 - Small changes
