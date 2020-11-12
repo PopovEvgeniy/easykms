@@ -7,7 +7,7 @@ object Form1: TForm1
   ClientHeight = 156
   ClientWidth = 451
   OnCreate = FormCreate
-  LCLVersion = '2.0.4.0'
+  LCLVersion = '2.0.10.0'
   object Label1: TLabel
     Left = 8
     Height = 15

@@ -1,6 +1,6 @@
                                             Easy kms
 
-                                           Version 1.9.0.6
+                                           Version 1.9.1
 
                    Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
@@ -44,7 +44,7 @@ You can send me a letter to tuzik87@inbox.ru
 About program modification
 
 Source code is included in source.zip archive.
-It can be compiled under Lazarus 2.0 or higher.
+It can be compiled under Lazarus 2.0.10 or higher.
 
 Version history
 
@@ -72,3 +72,4 @@ Version history
 1.8.8 - User interface was improved
 1.8.9 - 1.9 - Small changes
 1.9.0.1 - 1.9.0.6 - Server list was updated
+1.9.1 - Small changes
