@@ -15,11 +15,14 @@ type
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
+    CheckBox1: TCheckBox;
     ComboBox1: TComboBox;
     Label1: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure CheckBox1Change(Sender: TObject);
+    procedure ComboBox1Change(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
 
@@ -34,7 +37,7 @@ implementation
 procedure window_setup();
 begin
  Application.Title:='Easy kms';
- Form1.Caption:='Easy kms 1.9.1';
+ Form1.Caption:='Easy kms 1.9.5';
  Form1.BorderStyle:=bsDialog;
  Form1.Font.Name:=Screen.MenuFont.Name;
  Form1.Font.Size:=14;
@@ -44,6 +47,8 @@ procedure interface_setup();
 begin
  Form1.ComboBox1.Text:='';
  Form1.ComboBox1.Style:=csDropDownList;
+ Form1.CheckBox1.Checked:=False;
+ Form1.CheckBox1.Enabled:=True;
  Form1.Button1.ShowHint:=True;
  Form1.Button2.ShowHint:=Form1.Button1.ShowHint;
  Form1.Button3.ShowHint:=Form1.Button1.ShowHint;
@@ -55,28 +60,26 @@ begin
  Form1.Button1.Caption:='Activate';
  Form1.Button2.Caption:='Show activation status';
  Form1.Button3.Caption:='Change product key';
+ Form1.CheckBox1.Caption:='Allow use user-defined KMS server';
  Form1.Button1.Hint:='Activate you copy of Microsoft Windows via selected server';
  Form1.Button2.Hint:='Show current activation status';
  Form1.Button3.Hint:='Change current product key';
-end;
-
-procedure load_list(servers:string);
-begin
- Form1.ComboBox1.Items.Clear();
- Form1.ComboBox1.Items.LoadFromFile(servers);
- Form1.ComboBox1.ItemIndex:=0;
 end;
 
 procedure load_server_list(servers:string);
 begin
  if FileExists(servers)=True then
  begin
-  load_list(servers);
+  Form1.ComboBox1.Items.Clear();
+  Form1.ComboBox1.Items.LoadFromFile(servers);
+  Form1.ComboBox1.ItemIndex:=0;
  end
  else
  begin
-  ShowMessage('Cant load server list');
-  Halt(0);
+  Form1.ComboBox1.Style:=csDropDown;
+  Form1.CheckBox1.Checked:=True;
+  Form1.CheckBox1.Enabled:=False;
+  Form1.Button1.Enabled:=False;
  end;
 
 end;
@@ -137,6 +140,17 @@ end;
 procedure TForm1.Button3Click(Sender: TObject);
 begin
  change_product_key(Application.Title);
+end;
+
+procedure TForm1.CheckBox1Change(Sender: TObject);
+begin
+ Form1.ComboBox1.Style:=csDropDownList;
+ if Form1.CheckBox1.Checked=True then Form1.ComboBox1.Style:=csDropDown;
+end;
+
+procedure TForm1.ComboBox1Change(Sender: TObject);
+begin
+ Form1.Button1.Enabled:=Form1.ComboBox1.Text<>'';
 end;
 
 end.

@@ -1,6 +1,6 @@
                                             Easy kms
 
-                                           Version 1.9.1.2
+                                           Version 1.9.5.1
 
                    Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
@@ -14,9 +14,8 @@ Program description
 This software let you activate Microsoft Windows via custom KMS server.
 Please use it for non-commercial home purpose only.
 
-Program usage
+Important remark
 
-Just run this tool and select server for activate you copy of Microsoft Windows.
 This software need admin right for correct work. Run it as admin.
 
 Product key
@@ -44,7 +43,7 @@ You can send me a letter to tuzik87@inbox.ru
 About program modification
 
 Source code is included in source.zip archive.
-It can be compiled under Lazarus 2.0.10 or higher.
+It can be compiled under Lazarus 2.2 RC1 or higher.
 
 Version history
 
@@ -74,3 +73,6 @@ Version history
 1.9.0.1 - 1.9.0.6 - Server list was updated
 1.9.1 - Small changes
 1.9.1.1 - 1.9.1.2 - Server list was updated
+1.9.2 - User interface was improved
+1.9.3 - 1.9.5 - Small changes
+1.9.5.1 - Server list was updated
