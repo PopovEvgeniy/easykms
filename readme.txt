@@ -1,6 +1,6 @@
                                             Easy kms
 
-                                           Version 1.9.5.1
+                                           Version 1.9.5.2
 
                    Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
@@ -75,4 +75,4 @@ Version history
 1.9.1.1 - 1.9.1.2 - Server list was updated
 1.9.2 - User interface was improved
 1.9.3 - 1.9.5 - Small changes
-1.9.5.1 - Server list was updated
+1.9.5.1 - 1.9.5.2 - Server list was updated
