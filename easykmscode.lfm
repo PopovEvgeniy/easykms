@@ -1,19 +1,20 @@
 object Form1: TForm1
   Left = 248
-  Height = 192
+  Height = 219
   Top = 210
   Width = 451
   Caption = 'Easy kms'
-  ClientHeight = 192
+  ClientHeight = 219
   ClientWidth = 451
   OnCreate = FormCreate
-  LCLVersion = '2.2.0.1'
+  LCLVersion = '2.2.2.0'
   object Label1: TLabel
     Left = 8
     Height = 15
     Top = 16
     Width = 32
     Caption = 'Server'
+    ParentColor = False
   end
   object ComboBox1: TComboBox
     Left = 64
@@ -60,5 +61,14 @@ object Form1: TForm1
     Caption = 'Allow use user-defined KMS server'
     OnChange = CheckBox1Change
     TabOrder = 4
+  end
+  object Button4: TButton
+    Left = 160
+    Height = 25
+    Top = 184
+    Width = 136
+    Caption = 'Reset activation'
+    OnClick = Button4Click
+    TabOrder = 5
   end
 end
