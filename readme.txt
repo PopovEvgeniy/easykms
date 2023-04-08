@@ -1,6 +1,6 @@
                                             Easy kms
 
-                                           Version 1.9.6.2
+                                           Version 1.9.7
 
                    Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
@@ -30,7 +30,7 @@ Try to change server or/and product key if you have trouble with activation.
 
 Server list
 
-Edit servers.txt file to add or remove server from server list.
+Edit servers.txt file to add or remove the server from server list.
 
 License
 
@@ -43,7 +43,7 @@ You can send me a letter to tuzik87@inbox.ru
 About program modification
 
 Source code is included in source.zip archive.
-It can be compiled under Lazarus 2.2.2 or higher.
+It can be compiled under Lazarus 2.2.6 or higher.
 
 Version history
 
@@ -78,3 +78,4 @@ Version history
 1.9.5.1 - 1.9.5.3 - Server list updated
 1.9.6 - User interface improved
 1.9.6.1 - 1.9.6.2 - Documentation updated
+1.9.7 - Small changes
