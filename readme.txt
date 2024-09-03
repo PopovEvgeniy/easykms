@@ -1,6 +1,6 @@
                                             Easy kms
 
-                                           Version 1.9.7.1
+                                           Version 1.9.7.3
 
                    Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
@@ -21,7 +21,7 @@ This software needs admin rights for correct work. Run it as an admin.
 Product key
 
 The volume license is the best choice because it doesn't have problems with activation. Use the volume license if possible.
-You need to apply the product key from the volume license before do activation if you have an ordinary license.
+You need to apply the product key from the volume license before activation if you have an ordinary license.
 You can see these keys here: https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys
 
 Trouble guide
@@ -34,11 +34,11 @@ Edit the servers.txt file to add or remove the server from the server list.
 
 License
 
-This program distributed under GNU GENERAL PUBLIC LICENSE.
+This program is distributed under GNU GENERAL PUBLIC LICENSE.
 
 Contact
 
-You can send me a letter at tuzik87@inbox.ru
+You can send me a letter at tuzik87@inbox.ru.
 
 About program modification
 
@@ -79,4 +79,4 @@ Version history
 1.9.6 — User interface improved.
 1.9.6.1 — 1.9.6.2 — Documentation updated.
 1.9.7 — Small changes.
-1.9.7.1 — 1.9.7.2 — Documentation updated.
+1.9.7.1 — 1.9.7.3 — Documentation updated.
