@@ -11,26 +11,26 @@ Internet connection
 
 Program description
 
-This software let you activate Microsoft Windows via custom KMS server.
-Please use it for non-commercial home purpose only.
+This software lets you activate Microsoft Windows via a custom KMS server.
+Please use it for non-commercial home purposes only.
 
 Important remark
 
-This software need admin right for correct work. Run it as admin.
+This software needs admin rights for correct work. Run it as an admin.
 
 Product key
 
-Volume license is the best choice because it doesn't have problem with activation. Use volume license if possible.
-You need to apply product key from volume license before do activation if you have ordinary license.
+The volume license is the best choice because it doesn't have problems with activation. Use the volume license if possible.
+You need to apply the product key from the volume license before do activation if you have an ordinary license.
 You can see these keys here: https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys
 
 Trouble guide
 
-Try to change server or/and product key if you have trouble with activation.
+Try to change the server or product key if you have trouble with activation.
 
 Server list
 
-Edit servers.txt file to add or remove the server from server list.
+Edit the servers.txt file to add or remove the server from the server list.
 
 License
 
@@ -38,11 +38,11 @@ This program distributed under GNU GENERAL PUBLIC LICENSE.
 
 Contact
 
-You can send me a letter to tuzik87@inbox.ru
+You can send me a letter at tuzik87@inbox.ru
 
 About program modification
 
-The code is included in source.zip archive.
+The code is included in the source.zip archive.
 It can be compiled under Lazarus 2.2.6 or higher.
 
 Version history
@@ -79,4 +79,4 @@ Version history
 1.9.6 — User interface improved.
 1.9.6.1 — 1.9.6.2 — Documentation updated.
 1.9.7 — Small changes.
-1.9.7.1 — Documentation updated.
+1.9.7.1 — 1.9.7.2 — Documentation updated.
