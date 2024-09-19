@@ -39,7 +39,7 @@ implementation
 procedure window_setup();
 begin
  Application.Title:='Easy kms';
- Form1.Caption:='Easy kms 1.9.7';
+ Form1.Caption:='Easy kms 1.9.8';
  Form1.BorderStyle:=bsDialog;
  Form1.Font.Name:=Screen.MenuFont.Name;
  Form1.Font.Size:=14;
@@ -51,7 +51,7 @@ begin
  Form1.ComboBox1.Style:=csDropDownList;
  Form1.CheckBox1.Checked:=False;
  Form1.CheckBox1.Enabled:=True;
- Form1.Button1.ShowHint:=True;
+ Form1.Button1.ShowHint:=False;
  Form1.Button2.ShowHint:=Form1.Button1.ShowHint;
  Form1.Button3.ShowHint:=Form1.Button1.ShowHint;
  Form1.Button4.ShowHint:=Form1.Button1.ShowHint;
@@ -61,14 +61,10 @@ procedure language_setup();
 begin
  Form1.Label1.Caption:='Server';
  Form1.Button1.Caption:='Activate';
- Form1.Button2.Caption:='Show activation status';
- Form1.Button3.Caption:='Change product key';
- Form1.Button4.Caption:='Reset activation';
- Form1.CheckBox1.Caption:='Allow use user-defined KMS server';
- Form1.Button1.Hint:='Activate you copy of Microsoft Windows via selected server';
- Form1.Button2.Hint:='Show current activation status';
- Form1.Button3.Hint:='Change current product key';
- Form1.Button4.Hint:='Reset current activation';
+ Form1.Button2.Caption:='Show the activation status';
+ Form1.Button3.Caption:='Change the product key';
+ Form1.Button4.Caption:='Reset the activation';
+ Form1.CheckBox1.Caption:='Allow use of a user-defined KMS server';
 end;
 
 procedure load_server_list(const servers:string);
@@ -121,7 +117,7 @@ end;
 procedure change_product_key(const title:string);
 var key:string;
 begin
- key:=InputBox(title,'Enter new product key','');
+ key:=InputBox(title,'Enter a new product key','');
  if key<>'' then execute_command('slmgr /ipk '+key);
 end;
 

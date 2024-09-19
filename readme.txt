@@ -1,10 +1,10 @@
                                             Easy kms
 
-                                           Version 1.9.7.3
+                                           Version 1.9.7.4
 
                    Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
-System requirement
+System requirements
 
 Windows 7 or higher
 Internet connection
@@ -20,7 +20,7 @@ This software needs admin rights for correct work. Run it as an admin.
 
 Product key
 
-The volume license is the best choice because it doesn't have problems with activation. Use the volume license if possible.
+The volume license is the best choice because it doesn't have problems with the activation. Use the volume license if possible.
 You need to apply the product key from the volume license before activation if you have an ordinary license.
 You can see these keys here: https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys
 
@@ -43,7 +43,7 @@ You can send me a letter at tuzik87@inbox.ru.
 About program modification
 
 The code is included in the source.zip archive.
-It can be compiled under Lazarus 2.2.6 or higher.
+It can be compiled under Lazarus 3.4 or higher.
 
 Version history
 
@@ -80,3 +80,4 @@ Version history
 1.9.6.1 — 1.9.6.2 — Documentation updated.
 1.9.7 — Small changes.
 1.9.7.1 — 1.9.7.3 — Documentation updated.
+1.9.8 — Small changes.
