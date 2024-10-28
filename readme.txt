@@ -1,6 +1,6 @@
                                             Easy kms
 
-                                           Version 1.9.8.1
+                                           Version 1.9.8.2
 
                    Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
@@ -50,35 +50,35 @@ Version history
 0.1: Initial version.
 0.2-0.4: A new option has been added.
 0.5: The small changes
-0.6-0.7: The user interface improved.
+0.6-0.7: The user interface has improved.
 0.8: 64-bit system support has been added.
-0.8.0.1: The server list updated.
+0.8.0.1: The server list has been updated.
 0.9: The small changes.
-1.0: The user interface improved.
-1.1: The small bug is fixed.
-1.2: The user interface improved.
+1.0: The user interface has improved.
+1.1: The small bug has been fixed.
+1.2: The user interface has improved.
 1.2.1: The small changes.
-1.2.1.1: The server list updated.
+1.2.1.1: The server list has been updated.
 1.3-1.5: The small changes.
-1.6: The source code adapted to the new version of Lazarus.
+1.6: The source code has been adapted to the new version of Lazarus.
 1.7: The small changes.
-1.8: The user interface improved.
-1.8.0.1: The server list updated.
-1.8.0.2: Documentation updated.
+1.8: The user interface has improved.
+1.8.0.1: The server list has been updated.
+1.8.0.2: The documentation has been updated.
 1.8.1: The small changes.
-1.8.2-1.8.3: The user interface improved.
+1.8.2-1.8.3: The user interface has improved.
 1.8.4-1.8.7: The small changes.
-1.8.8: The user interface improved.
+1.8.8: The user interface has improved.
 1.8.9-1.9: The small changes.
-1.9.0.1-1.9.0.6: The server list updated.
+1.9.0.1-1.9.0.6: The server list has been updated.
 1.9.1: The small changes.
-1.9.1.1-1.9.1.2: The server list updated.
-1.9.2: The user interface improved.
+1.9.1.1-1.9.1.2: The server list has been updated.
+1.9.2: The user interface has improved.
 1.9.3-1.9.5: The small changes.
-1.9.5.1-1.9.5.3: The server list updated.
-1.9.6: The user interface improved.
-1.9.6.1-1.9.6.2: Documentation updated.
+1.9.5.1-1.9.5.3: The server list has been updated.
+1.9.6: The user interface has improved.
+1.9.6.1-1.9.6.2: The documentation has been updated.
 1.9.7: The small changes.
-1.9.7.1-1.9.7.3: Documentation updated.
+1.9.7.1-1.9.7.3: The documentation has been updated.
 1.9.8: The small changes.
-1.9.8.1: Documentation updated.
+1.9.8.1-1.9.8.2: The documentation has been updated.
