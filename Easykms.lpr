@@ -16,7 +16,7 @@ begin
   Application.Title:='Easy kms';
   RequireDerivedFormResource:=True;
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TMainWindow, MainWindow);
   Application.Run;
 end.
 

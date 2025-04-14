@@ -9,22 +9,22 @@ uses Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
 
 type
 
-  { TForm1 }
+  { TMainWindow }
 
-  TForm1 = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    Button3: TButton;
-    Button4: TButton;
-    CheckBox1: TCheckBox;
-    ComboBox1: TComboBox;
-    Label1: TLabel;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
-    procedure CheckBox1Change(Sender: TObject);
-    procedure ComboBox1Change(Sender: TObject);
+  TMainWindow = class(TForm)
+    ActivateButton: TButton;
+    ShowStatusButton: TButton;
+    ChangeKeyButton: TButton;
+    ResetButton: TButton;
+    CustomServerCheckBox: TCheckBox;
+    ServerBox: TComboBox;
+    ServerPanel: TLabel;
+    procedure ActivateButtonClick(Sender: TObject);
+    procedure ShowStatusButtonClick(Sender: TObject);
+    procedure ChangeKeyButtonClick(Sender: TObject);
+    procedure ResetButtonClick(Sender: TObject);
+    procedure CustomServerCheckBoxChange(Sender: TObject);
+    procedure ServerBoxChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
 
@@ -32,55 +32,55 @@ type
 
   end;
 
-var Form1: TForm1;
+var MainWindow: TMainWindow;
 
 implementation
 
 procedure window_setup();
 begin
  Application.Title:='Easy kms';
- Form1.Caption:='Easy kms 1.9.9';
- Form1.BorderStyle:=bsDialog;
- Form1.Font.Name:=Screen.MenuFont.Name;
- Form1.Font.Size:=14;
+ MainWindow.Caption:='Easy kms 2.0';
+ MainWindow.BorderStyle:=bsDialog;
+ MainWindow.Font.Name:=Screen.MenuFont.Name;
+ MainWindow.Font.Size:=14;
 end;
 
 procedure interface_setup();
 begin
- Form1.ComboBox1.Text:='';
- Form1.ComboBox1.Style:=csDropDownList;
- Form1.CheckBox1.Checked:=False;
- Form1.CheckBox1.Enabled:=True;
- Form1.Button1.ShowHint:=False;
- Form1.Button2.ShowHint:=Form1.Button1.ShowHint;
- Form1.Button3.ShowHint:=Form1.Button1.ShowHint;
- Form1.Button4.ShowHint:=Form1.Button1.ShowHint;
+ MainWindow.ServerBox.Text:='';
+ MainWindow.ServerBox.Style:=csDropDownList;
+ MainWindow.CustomServerCheckBox.Checked:=False;
+ MainWindow.CustomServerCheckBox.Enabled:=True;
+ MainWindow.ActivateButton.ShowHint:=False;
+ MainWindow.ShowStatusButton.ShowHint:=MainWindow.ActivateButton.ShowHint;
+ MainWindow.ChangeKeyButton.ShowHint:=MainWindow.ActivateButton.ShowHint;
+ MainWindow.ResetButton.ShowHint:=MainWindow.ActivateButton.ShowHint;
 end;
 
 procedure language_setup();
 begin
- Form1.Label1.Caption:='Server';
- Form1.Button1.Caption:='Activate';
- Form1.Button2.Caption:='Show the activation status';
- Form1.Button3.Caption:='Change the product key';
- Form1.Button4.Caption:='Reset the activation';
- Form1.CheckBox1.Caption:='Allow use of a user-defined KMS server';
+ MainWindow.ServerPanel.Caption:='Server';
+ MainWindow.ActivateButton.Caption:='Activate';
+ MainWindow.ShowStatusButton.Caption:='Show the activation status';
+ MainWindow.ChangeKeyButton.Caption:='Change the product key';
+ MainWindow.ResetButton.Caption:='Reset the activation';
+ MainWindow.CustomServerCheckBox.Caption:='Allow use of a user-defined KMS server';
 end;
 
 procedure load_server_list(const servers:string);
 begin
  if FileExists(servers)=True then
  begin
-  Form1.ComboBox1.Items.Clear();
-  Form1.ComboBox1.Items.LoadFromFile(servers);
-  Form1.ComboBox1.ItemIndex:=0;
+  MainWindow.ServerBox.Items.Clear();
+  MainWindow.ServerBox.Items.LoadFromFile(servers);
+  MainWindow.ServerBox.ItemIndex:=0;
  end
  else
  begin
-  Form1.ComboBox1.Style:=csDropDown;
-  Form1.CheckBox1.Checked:=True;
-  Form1.CheckBox1.Enabled:=False;
-  Form1.Button1.Enabled:=False;
+  MainWindow.ServerBox.Style:=csDropDown;
+  MainWindow.CustomServerCheckBox.Checked:=True;
+  MainWindow.CustomServerCheckBox.Enabled:=False;
+  MainWindow.ActivateButton.Enabled:=False;
  end;
 
 end;
@@ -128,42 +128,42 @@ end;
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TMainWindow }
 
-procedure TForm1.FormCreate(Sender: TObject);
+procedure TMainWindow.FormCreate(Sender: TObject);
 begin
  setup();
 end;
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TMainWindow.ActivateButtonClick(Sender: TObject);
 begin
- do_activation(Form1.ComboBox1.Text);
+ do_activation(MainWindow.ServerBox.Text);
 end;
 
-procedure TForm1.Button2Click(Sender: TObject);
+procedure TMainWindow.ShowStatusButtonClick(Sender: TObject);
 begin
  show_activation_status();
 end;
 
-procedure TForm1.Button3Click(Sender: TObject);
+procedure TMainWindow.ChangeKeyButtonClick(Sender: TObject);
 begin
  change_product_key(Application.Title);
 end;
 
-procedure TForm1.Button4Click(Sender: TObject);
+procedure TMainWindow.ResetButtonClick(Sender: TObject);
 begin
  reset_activation();
 end;
 
-procedure TForm1.CheckBox1Change(Sender: TObject);
+procedure TMainWindow.CustomServerCheckBoxChange(Sender: TObject);
 begin
- Form1.ComboBox1.Style:=csDropDownList;
- if Form1.CheckBox1.Checked=True then Form1.ComboBox1.Style:=csDropDown;
+ MainWindow.ServerBox.Style:=csDropDownList;
+ if MainWindow.CustomServerCheckBox.Checked=True then MainWindow.ServerBox.Style:=csDropDown;
 end;
 
-procedure TForm1.ComboBox1Change(Sender: TObject);
+procedure TMainWindow.ServerBoxChange(Sender: TObject);
 begin
- Form1.Button1.Enabled:=Form1.ComboBox1.Text<>'';
+ MainWindow.ActivateButton.Enabled:=MainWindow.ServerBox.Text<>'';
 end;
 
 end.

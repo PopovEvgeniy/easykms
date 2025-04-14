@@ -76,7 +76,7 @@
       <Unit1>
         <Filename Value="easykmscode.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="MainWindow"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Easykmscode"/>
