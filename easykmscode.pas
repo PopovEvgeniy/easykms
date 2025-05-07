@@ -16,14 +16,12 @@ type
     ShowStatusButton: TButton;
     ChangeKeyButton: TButton;
     ResetButton: TButton;
-    CustomServerCheckBox: TCheckBox;
     ServerBox: TComboBox;
     ServerPanel: TLabel;
     procedure ActivateButtonClick(Sender: TObject);
     procedure ShowStatusButtonClick(Sender: TObject);
     procedure ChangeKeyButtonClick(Sender: TObject);
     procedure ResetButtonClick(Sender: TObject);
-    procedure CustomServerCheckBoxChange(Sender: TObject);
     procedure ServerBoxChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
@@ -39,7 +37,7 @@ implementation
 procedure window_setup();
 begin
  Application.Title:='Easy kms';
- MainWindow.Caption:='Easy kms 2.0';
+ MainWindow.Caption:='Easy kms 2.0.1';
  MainWindow.BorderStyle:=bsDialog;
  MainWindow.Font.Name:=Screen.MenuFont.Name;
  MainWindow.Font.Size:=14;
@@ -48,9 +46,7 @@ end;
 procedure interface_setup();
 begin
  MainWindow.ServerBox.Text:='';
- MainWindow.ServerBox.Style:=csDropDownList;
- MainWindow.CustomServerCheckBox.Checked:=False;
- MainWindow.CustomServerCheckBox.Enabled:=True;
+ MainWindow.ServerBox.Style:=csDropDown;
  MainWindow.ActivateButton.ShowHint:=False;
  MainWindow.ShowStatusButton.ShowHint:=MainWindow.ActivateButton.ShowHint;
  MainWindow.ChangeKeyButton.ShowHint:=MainWindow.ActivateButton.ShowHint;
@@ -64,7 +60,6 @@ begin
  MainWindow.ShowStatusButton.Caption:='Show the activation status';
  MainWindow.ChangeKeyButton.Caption:='Change the product key';
  MainWindow.ResetButton.Caption:='Reset the activation';
- MainWindow.CustomServerCheckBox.Caption:='Allow use of a user-defined KMS server';
 end;
 
 procedure load_server_list(const servers:string);
@@ -75,13 +70,6 @@ begin
   MainWindow.ServerBox.Items.LoadFromFile(servers);
   MainWindow.ServerBox.ItemIndex:=0;
  end
- else
- begin
-  MainWindow.ServerBox.Style:=csDropDown;
-  MainWindow.CustomServerCheckBox.Checked:=True;
-  MainWindow.CustomServerCheckBox.Enabled:=False;
-  MainWindow.ActivateButton.Enabled:=False;
- end;
 
 end;
 
@@ -153,12 +141,6 @@ end;
 procedure TMainWindow.ResetButtonClick(Sender: TObject);
 begin
  reset_activation();
-end;
-
-procedure TMainWindow.CustomServerCheckBoxChange(Sender: TObject);
-begin
- MainWindow.ServerBox.Style:=csDropDownList;
- if MainWindow.CustomServerCheckBox.Checked=True then MainWindow.ServerBox.Style:=csDropDown;
 end;
 
 procedure TMainWindow.ServerBoxChange(Sender: TObject);
