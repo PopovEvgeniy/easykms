@@ -1,6 +1,6 @@
                                             Easy kms
 
-                                           Version 2.0.1
+                                           Version 2.0.1.1
 
                    Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
@@ -34,11 +34,7 @@ Edit the servers.txt file to add or remove the server from the server list.
 
 License
 
-This program is distributed under GNU GENERAL PUBLIC LICENSE.
-
-Contact
-
-You can send me a letter at tuzik87@inbox.ru.
+This program is distributed under the GNU GENERAL PUBLIC LICENSE.
 
 About program modification
 
@@ -86,3 +82,4 @@ Version history
 2.0: The source code was recompiled under Lazarus 4.0 RC3.
 2.0.0.1: The server list has been updated.
 2.0.1: The user interface has improved.
+2.0.1.1: The documentation has been updated.
