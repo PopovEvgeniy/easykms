@@ -1,49 +1,43 @@
                                             Easy kms
 
-                                           Version 2.0.1.2
+                                           Version 2.0.3
 
-                   Simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
+                   The simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
-System requirements
+System requirements.
 
 Windows Vista or higher
 Internet connection
 
-Program description
+The program description.
 
 This software lets you activate Microsoft Windows via a custom KMS server.
 Please use it for non-commercial home purposes only.
-
-Important remark
-
 This software needs admin rights for correct work. Run it as an admin.
 
-Product key
+The product key.
 
 The volume license is the best choice because it doesn't have problems with the activation. Use the volume license if possible.
 You need to apply the product key from the volume license before activation if you have an ordinary license.
 You can see these keys here: https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys
+Try to change the server or the product key if you have trouble with activation.
 
-Troubleshooting guide
-
-Try to change the server or product key if you have trouble with activation.
-
-Server list
+The server list.
 
 Edit the servers.txt file to add or remove the server from the server list.
 
-License
+License.
 
 This program is distributed under the GNU GENERAL PUBLIC LICENSE.
 
-About program modification
+The source code.
 
 The code is included in the source.zip archive.
-It can be compiled under Lazarus 4.0 or higher.
+It can be compiled under Lazarus 4.2 or higher.
 
-Version history
+Version history.
 
-0.1: Initial version.
+0.1: The initial version.
 0.2-0.4: A new option has been added.
 0.5: The small changes
 0.6-0.7: The user interface has improved.
@@ -84,3 +78,5 @@ Version history
 2.0.1: The user interface has improved.
 2.0.1.1: The documentation has been updated.
 2.0.1.2: The server list has been updated.
+2.0.2: The source code was recompiled under Lazarus 4.2.
+2.0.3: The user interface has improved.

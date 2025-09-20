@@ -37,7 +37,7 @@ implementation
 procedure window_setup();
 begin
  Application.Title:='Easy kms';
- MainWindow.Caption:='Easy kms 2.0.1';
+ MainWindow.Caption:='Easy kms 2.0.3';
  MainWindow.BorderStyle:=bsDialog;
  MainWindow.Font.Name:=Screen.MenuFont.Name;
  MainWindow.Font.Size:=14;
@@ -47,6 +47,7 @@ procedure interface_setup();
 begin
  MainWindow.ServerBox.Text:='';
  MainWindow.ServerBox.Style:=csDropDown;
+ MainWindow.ActivateButton.Enabled:=False;
  MainWindow.ActivateButton.ShowHint:=False;
  MainWindow.ShowStatusButton.ShowHint:=MainWindow.ActivateButton.ShowHint;
  MainWindow.ChangeKeyButton.ShowHint:=MainWindow.ActivateButton.ShowHint;

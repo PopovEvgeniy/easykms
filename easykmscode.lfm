@@ -6,6 +6,7 @@ object MainWindow: TMainWindow
   Caption = 'Easy kms'
   ClientHeight = 209
   ClientWidth = 451
+  LCLVersion = '4.2.0.0'
   OnCreate = FormCreate
   object ServerPanel: TLabel
     Left = 8
