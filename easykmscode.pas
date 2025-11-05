@@ -37,7 +37,7 @@ implementation
 procedure window_setup();
 begin
  Application.Title:='Easy kms';
- MainWindow.Caption:='Easy kms 2.0.3';
+ MainWindow.Caption:='Easy kms 2.0.4';
  MainWindow.BorderStyle:=bsDialog;
  MainWindow.Font.Name:=Screen.MenuFont.Name;
  MainWindow.Font.Size:=14;
@@ -70,6 +70,7 @@ begin
   MainWindow.ServerBox.Items.Clear();
   MainWindow.ServerBox.Items.LoadFromFile(servers);
   MainWindow.ServerBox.ItemIndex:=0;
+  MainWindow.ActivateButton.Enabled:=True;
  end
 
 end;
