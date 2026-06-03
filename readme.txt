@@ -1,6 +1,6 @@
                                             Easy kms
 
-                                           Version 2.0.4
+                                           Version 2.0.7
 
                    The simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
@@ -33,7 +33,7 @@ This program is distributed under the GNU GENERAL PUBLIC LICENSE.
 The source code.
 
 The code is included in the source.zip archive.
-It can be compiled under Lazarus 4.2 or higher.
+It can be compiled under Lazarus 4.6 or higher.
 
 Version history.
 
@@ -80,4 +80,4 @@ Version history.
 2.0.1.2: The server list has been updated.
 2.0.2: The source code was recompiled under Lazarus 4.2.
 2.0.3: The user interface has improved.
-2.0.4: The small changes.
+2.0.4-2.0.7: The small changes.
