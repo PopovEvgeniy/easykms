@@ -46,7 +46,7 @@ implementation
 procedure TMainWindow.window_setup();
 begin
  Application.Title:='Easy kms';
- Self.Caption:='Easy kms 2.0.7';
+ Self.Caption:='Easy kms 2.0.8';
  Self.BorderStyle:=bsDialog;
  Self.Font.Name:=Screen.MenuFont.Name;
  Self.Font.Size:=14;

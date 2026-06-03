@@ -20,11 +20,15 @@ procedure show_activation_status();
 implementation
 
 procedure execute_command(const command:string);
-var shell,arguments:string;
+var arguments:string;
 begin
- shell:=GetEnvironmentVariable('COMSPEC');
  arguments:='/c '+command;
- if shell<>'' then ExecuteProcess(shell,arguments,[]);
+ try
+  ExecuteProcess(GetEnvironmentVariable('COMSPEC'),arguments,[]);
+ except
+  ;
+ end;
+
 end;
 
 procedure change_product_key(const key:string);
