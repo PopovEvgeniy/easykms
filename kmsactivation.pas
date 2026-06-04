@@ -40,6 +40,7 @@ procedure do_activation(const server:string);
 begin
  execute_command('slmgr /skms '+server);
  execute_command('slmgr /ato');
+ execute_command('slmgr /xpr');
 end;
 
 procedure reset_activation();

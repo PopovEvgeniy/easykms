@@ -1,13 +1,13 @@
                                             Easy kms
 
-                                           Version 2.0.8.1
+                                           Version 2.0.9
 
                    The simple activation tool for Microsoft Windows by Popov Evgeniy Alekseyevich
 
 System requirements.
 
-Windows Vista or higher
-Internet connection
+Windows Vista or higher.
+Internet connection.
 
 The program description.
 
@@ -82,3 +82,4 @@ Version history.
 2.0.3: The user interface has improved.
 2.0.4-2.0.8: The small changes.
 2.0.8.1: The server list has been updated.
+2.0.9: The small changes.
