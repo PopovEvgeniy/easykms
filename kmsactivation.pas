@@ -20,11 +20,9 @@ procedure show_activation_status();
 implementation
 
 procedure execute_command(const command:string);
-var arguments:string;
 begin
- arguments:='/c '+command;
  try
-  ExecuteProcess(GetEnvironmentVariable('COMSPEC'),arguments,[]);
+  ExecuteProcess(GetEnvironmentVariable('COMSPEC'),'/c '+command,[]);
  except
   ;
  end;
